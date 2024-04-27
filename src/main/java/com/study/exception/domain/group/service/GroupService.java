@@ -4,7 +4,6 @@ import org.springframework.stereotype.Service;
 
 import com.study.exception.domain.group.error.GroupErrorCode;
 import com.study.exception.domain.group.exception.GroupException;
-import com.study.exception.global.error.CommonErrorCode;
 
 import lombok.extern.slf4j.Slf4j;
 
