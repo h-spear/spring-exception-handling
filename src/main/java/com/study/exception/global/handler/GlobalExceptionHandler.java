@@ -14,7 +14,6 @@ import lombok.extern.slf4j.Slf4j;
 @RestControllerAdvice
 public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 
-	// 커스텀 예외 처리
 	@ExceptionHandler(ApiException.class)
 	public ResponseEntity<ApiResponse<?>> handleCustomException(ApiException e) {
 		log.info("exception!! code={}", e.getErrorCode());
