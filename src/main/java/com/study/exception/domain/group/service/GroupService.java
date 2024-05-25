@@ -11,7 +11,7 @@ import lombok.extern.slf4j.Slf4j;
 @Service
 public class GroupService {
 
-	public void call(int input) {
+	public boolean call(int input) {
 		log.info("service call");
 		switch (input) {
 			case 1 -> throw new GroupException(GroupErrorCode.GROUP_NOT_FOUND);
@@ -23,5 +23,6 @@ public class GroupService {
 			case 7 -> throw new GroupException(GroupErrorCode.GROUP_MANAGER_CANNOT_LEAVE);
 			case 8 -> throw new GroupException(GroupErrorCode.DOES_NOT_MATCH_NUMBER_OF_GROUPS);
 		}
+		return true;
 	}
 }

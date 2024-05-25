@@ -54,7 +54,6 @@ public class ApiResponse<T> {
 
 	private static Map<String, String> getErrorData(ErrorCode errorCode) {
 		Map<String, String> map = new HashMap<>();
-		map.put("code", errorCode.name());
 		map.put("message", errorCode.getMessage());
 		return map;
 	}
